@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Guidelines — YOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="legal-page">
+
+  <nav class="nav">
+    <a href="/" class="nav-logo">YOR</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:support@yor.space">Support</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile">
+    <a href="/">Home</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="mailto:support@yor.space">Support</a>
+  </div>
+
+  <div class="legal-header">
+    <h1>Community Guidelines</h1>
+    <p class="legal-meta">Last Updated: April 2026</p>
+  </div>
+
+  <div class="legal-content">
+
+    <p>YOR is a space where people share how they feel and connect through their moods. To keep it safe and welcoming for everyone, we ask that you follow these guidelines.</p>
+
+    <h2>Profile Photos</h2>
+    <p>Your profile photo is how others see you in YOR. To keep the experience comfortable for everyone, please make sure your photo:</p>
+    <p><strong>Is appropriate.</strong> No nudity, sexually explicit or suggestive imagery. This includes photos that are partially obscured, filtered, or stylized to depict explicit content.</p>
+    <p><strong>Is non-violent.</strong> No depictions of violence, gore, weapons, or anything intended to shock or disturb.</p>
+    <p><strong>Is yours.</strong> Use a photo that represents you. Don't impersonate other people or use someone else's likeness without their permission.</p>
+    <p><strong>Is not harmful.</strong> No hate symbols, slurs, or imagery that promotes discrimination based on race, ethnicity, gender, sexual orientation, religion, or disability.</p>
+    <p><strong>Is not misleading.</strong> No spam, scams, or deceptive imagery designed to trick other users.</p>
+    <p>We use a combination of automated tools and human review to check profile photos. Most photos are reviewed instantly. In some cases, our team may need a bit more time — we aim to review flagged content within 24 hours.</p>
+
+    <h2>Reporting</h2>
+    <p>If you see a profile photo that doesn't follow these guidelines, you can report it directly from the app. Tap the <strong>···</strong> menu next to the person's name and choose <strong>Report</strong>.</p>
+    <p>All reports are anonymous. The person you report will never know it was you.</p>
+    <p>Once we receive a report, our moderation team will review it and take action if needed. If multiple people report the same photo, it may be temporarily hidden until we make a decision.</p>
+
+    <h2>What Happens if Your Photo Is Removed</h2>
+    <p>If your photo doesn't meet our guidelines, here's what to expect:</p>
+    <p><strong>First time.</strong> We'll replace your photo with a default avatar and send you a notification. You can upload a new photo right away.</p>
+    <p><strong>Second time.</strong> You'll receive a warning that further violations may result in restrictions.</p>
+    <p><strong>Third time.</strong> Photo uploads will be temporarily restricted for 7 days. After that, you can upload again.</p>
+    <p><strong>Repeated violations.</strong> Photo uploads may be permanently restricted. You can contact our support team to discuss your account.</p>
+    <p>We don't share the specific reason a photo was removed. This is to prevent misuse of our moderation system.</p>
+
+    <h2>Appeals</h2>
+    <p>If you believe your photo was removed by mistake, please reach out to our support team. We're happy to take another look.</p>
+
+    <h2>A Note on Kindness</h2>
+    <p>YOR is built around moods, emotions, and honest connection. We believe that starts with treating each other with respect — even in the small things, like a profile photo. Thank you for helping us keep this space safe.</p>
+    <p><em>These guidelines may be updated from time to time. Last updated: April 2026.</em></p>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">YOR</div>
+        <div class="footer-tagline">by Pulse Circle L.L.C-FZ</div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@yor.space">support@yor.space</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-copyright">&copy; 2026 Pulse Circle L.L.C-FZ. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileNav = document.querySelector('.nav-mobile');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
